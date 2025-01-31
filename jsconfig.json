@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "jsx":"react-jsx",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  }
+}
+curl -X POST 'http://localhost:3000/api/send-email' \
+  -H 'Authorization: Bearer re_YM3jNEQA_8FR9NqL5h4EKyKwRkiG32vBd' \
+  -H 'Content-Type: application/json' \
+  -d $'{
+    "to": "nataliemrobles@gmail.com",
+    "customerName": "Natalie"
+  }'
